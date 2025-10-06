@@ -1,0 +1,106 @@
+/* Style global */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2rem;
+  color: #1a4d2e;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Image */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  margin: 1.5rem 0;
+  transition: transform 0.5s ease;
+}
+
+/* Carte autour du texte */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+
+/* Texte caché par défaut */
+.text-wrapper p {
+  display: none;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+/* --- Media Queries --- */
+
+/* Grand écran */
+@media (min-width: 1024px) {
+  body {
+    background: linear-gradient(180deg, #a8e6cf, #dcedc1);
+  }
+
+  .text-wrapper .text-large {
+    display: block;
+  }
+
+  .img-responsive {
+    transform: rotate(-2deg);
+  }
+
+  .card {
+    background: #f8fff6;
+  }
+}
+
+/* Écran moyen */
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    background: linear-gradient(180deg, #ffd3b6, #ffaaa5);
+  }
+
+  .text-wrapper .text-medium {
+    display: block;
+  }
+
+  .img-responsive {
+    transform: rotate(1deg);
+  }
+
+  .card {
+    background: #fff6f2;
+  }
+}
+
+/* Petit écran */
+@media (max-width: 599px) {
+  body {
+    background: linear-gradient(180deg, #fff5ba, #ffe066);
+  }
+
+  .text-wrapper .text-small {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a4d2e;
+  }
+
+  .card {
+    background: #fffce8;
+  }
+}

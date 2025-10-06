@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Démo Media Queries - Le Canard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Le Canard</h1>
+
+    <picture>
+      <source srcset="images/canard.png" media="(min-width: 1024px)">
+      <source srcset="images/canard_medium.png" media="(min-width: 600px)">
+      <img src="images/canard_cut.png" alt="Canard" class="img-responsive">
+    </picture>
+
+    <div class="card">
+      <div class="text-wrapper">
+        <p class="text-large">
+          Le canard colvert est un oiseau aquatique commun vivant dans les zones humides d'Europe. 
+          Reconnaissable à sa tête d’un vert éclatant et à son bec jaune, 
+          il symbolise la tranquillité des étangs et la grâce naturelle des animaux aquatiques.
+          Excellent nageur, curieux et sociable, il s’adapte facilement à l’environnement humain.
+        </p>
+
+        <p class="text-medium">
+          Le canard colvert, avec sa tête verte et son bec jaune, est un oiseau emblématique de nos étangs.
+        </p>
+
+        <p class="text-small">COIN !</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
