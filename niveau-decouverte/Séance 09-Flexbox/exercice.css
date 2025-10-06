@@ -1,0 +1,58 @@
+#atelier {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  #atelier .card {
+    width: 155px;
+    height: 250px;
+    border-radius: 10px;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: white;
+  }
+  #atelier .card img {
+    height: 125px;
+    width: auto;
+  }
+  #atelier .card .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 7px;
+  }
+  #atelier .card .description p {
+    text-align: center;
+  }
+  .border{
+    font-size: xx-large;
+  }
+
+.ex2 {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.gallery-item {
+    background-color: #ddd;
+    width: 50px;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ccc;
+}

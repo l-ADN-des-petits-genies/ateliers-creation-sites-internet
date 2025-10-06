@@ -1,0 +1,41 @@
+h1, h2{
+    text-align: center;
+}
+.background, .size{
+    width: 200px;
+    height: 200px;
+    border: solid 3px black;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.size{
+    animation: size 30s infinite;
+}
+.background{
+    animation: background 5s infinite;
+}
+@keyframes size{
+    0%, 100%{
+        width: 200px;
+    }
+    25%{
+        width: 50px;
+    }
+    75%{
+        width: 150px;
+    }
+}
+@keyframes background{
+    0%, 100%{
+        background-color: red;
+    }
+    25%{
+        background-color: green;
+    }
+    75%{
+        background-color: aqua;
+    }
+}

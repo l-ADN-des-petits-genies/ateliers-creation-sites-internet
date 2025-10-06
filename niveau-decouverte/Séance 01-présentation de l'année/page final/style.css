@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  scroll-behavior: smooth;
+}
+textarea {
+  resize: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(51, 36, 132, 1) 70%,
+    rgba(208, 46, 52, 1) 80%,
+    rgba(224, 171, 46, 1) 90%,
+    rgba(72, 162, 70, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  z-index: 100;
+}
+nav .logoAdn {
+  background-color: white;
+  height: 50px;
+}
+nav .aDiv a {
+  font-size: 1.1rem;
+  padding: 0 10px;
+}
+.bagnere {
+  background: url(image/HTML5_logo.png) center no-repeat;
+  position: relative;
+  height: 400px;
+  border-bottom: solid 1px black;
+  animation: image 5s infinite;
+}
+#atelier {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+#atelier .card {
+  width: 155px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: white;
+}
+#atelier .card img {
+  height: 125px;
+  width: auto;
+}
+#atelier .card .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 7px;
+}
+#atelier .card .description p {
+  text-align: center;
+}
+#atelier .card:nth-child(2n) {
+  transform: rotateZ(5deg);
+}
+#atelier .card:nth-child(2n + 1) {
+  transform: rotateZ(-5deg);
+}
+#tarif {
+  margin-top: 35px;
+}
+#tarif table {
+  width: 100%;
+  border: solid 3px black;
+}
+#tarif td,
+#tarif th {
+  border: solid 1px black;
+}
+#contact {
+  margin: 10px 20px;
+}
+#contact form {
+  display: grid;
+  grid-template-areas:
+    "labelNom labelPrenom"
+    "inputNom inputPrenom"
+    "labelMail labelMail"
+    "inputMail inputMail"
+    "labelMessage labelMessage"
+    "inputMessage inputMessage"
+    "submit submit";
+  gap: 10px 15px;
+}
+#contact input,
+#contact textarea {
+  border: none;
+  border-radius: 11px;
+  font-style: 1.1rem;
+}
+#contact input:focus-visible,
+#contact textarea:focus-visible {
+  outline: none;
+  border: solid 2px rgba(51, 36, 132, 1);
+}
+#contact input {
+  height: 35px;
+  padding: 0 10px;
+}
+#contact textarea {
+  padding: 10px;
+}
+#contact .submit {
+  position: relative;
+  border: 1px solid rgba(51, 36, 132, 1);
+  height: 35px;
+  border-radius: 11px;
+  z-index: 1;
+  transition: color 0.5s;
+  color: black;
+  overflow: hidden;
+}
+#contact .submit:hover {
+  color: white;
+  border: none;
+}
+#contact .submit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 11px;
+  background-color: rgba(51, 36, 132, 1);
+  z-index: -1;
+  transform: translate(-100%);
+  transition: all 0.5s;
+}
+#contact .submit:hover::before {
+  transform: translate(0);
+}
+.labelNom {
+  grid-area: labelNom;
+}
+.inputNom {
+  grid-area: inputNom;
+}
+.labelPrenom {
+  grid-area: labelPrenom;
+}
+.inputPrenom {
+  grid-area: inputPrenom;
+}
+.labelMail {
+  grid-area: labelMail;
+}
+.inputMail {
+  grid-area: inputMail;
+}
+.labelMessage {
+  grid-area: labelMessage;
+}
+.inputMessage {
+  grid-area: inputMessage;
+}
+.submit {
+  grid-area: submit;
+}
+@keyframes image {
+  0% {
+    background-image: url(image/HTML5_logo.png);
+  }
+  20% {
+    background-image: url(image/logo-adnpg.png);
+  }
+  40% {
+    background-image: url(image/logo\ Sratch.png);
+  }
+  60% {
+    background-image: url(image/montage\ logo.png);
+  }
+  80% {
+    background-image: url(image/python_logo.png);
+  }
+  100% {
+    background-image: url(image/HTML5_logo.png);
+  }
+}
