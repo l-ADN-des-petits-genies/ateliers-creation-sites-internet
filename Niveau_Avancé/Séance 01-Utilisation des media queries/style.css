@@ -52,7 +52,7 @@ h1 {
 /* Grand écran */
 @media (min-width: 1024px) {
   body {
-    background: linear-gradient(180deg, #a8e6cf, #dcedc1);
+    background: #a8e6cf;
   }
 
   .text-wrapper .text-large {
@@ -71,7 +71,7 @@ h1 {
 /* Écran moyen */
 @media (min-width: 600px) and (max-width: 1023px) {
   body {
-    background: linear-gradient(180deg, #ffd3b6, #ffaaa5);
+    background: #ffaaa5;
   }
 
   .text-wrapper .text-medium {
@@ -90,7 +90,7 @@ h1 {
 /* Petit écran */
 @media (max-width: 599px) {
   body {
-    background: linear-gradient(180deg, #fff5ba, #ffe066);
+    background: #ffe066;
   }
 
   .text-wrapper .text-small {
